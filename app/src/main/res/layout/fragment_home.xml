@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/buttonupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="get"
+        android:text="update and submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="389dp"
+        android:layout_height="579dp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="54dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updatebmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your BMI"
+                android:inputType="number"
+                android:text="26"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have physical activity in past 30 days?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updatemyactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:text="1"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you consume fruit 1 or more times per day?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updatefruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you consume vegetables 1 or more times per day?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updatevegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:text="1"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Would you say that in general your health is: scale 1-5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updategeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="1 is excellent, 5 is poor"
+                android:inputType="number"
+                android:text="3"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For how many days during the past 30 days was your mental health not good?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updatemental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="scale 1-30 days"
+                android:inputType="number"
+                android:text="5"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For how many days during the past 30 days was your physical health not good?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/updatephysical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="scale 1-30 days"
+                android:inputType="number"
+                android:text="30"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

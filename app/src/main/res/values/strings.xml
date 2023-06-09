@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Stay Healthy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Stay Healthy</string>
+    <string name="nav_header_subtitle">https://github.com/tianqic/CS-125-Stay-Healthy.git</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Profiles</string>
+    <string name="menu_slideshow">Past Result</string>
+</resources>

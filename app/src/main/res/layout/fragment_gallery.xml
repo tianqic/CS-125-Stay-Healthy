@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+
+    <Button
+        android:id="@+id/getvalues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="get"
+        android:text="update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="389dp"
+        android:layout_height="579dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="17dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getsex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="1 = Male or 0 = Female"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="1 = 18-24 9 = 60-64 13 = 80 or older"
+                android:text="4"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have High Blood Pressure?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getbp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0 = no high BP, 1 = high BP"
+                android:text="1"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have High Cholesterol?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getchol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no high Chol, 1 = high Cho"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cholesterol Check in 5 years"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getcholcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="1"
+                android:hint="0 = no check, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getbmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="26"
+                android:hint="Enter your BMI"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you smoked at least 100 cigarettes?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getcigare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="you had a stroke"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getstroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have coronary heart disease?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getheart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have physical activity in past 30 days?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getmyactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="1"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you consume fruit 1 or more times per day?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getfruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you consume vegetables 1 or more times per day?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getvegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="1"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you a heacy drinker?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getheacydrinker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have any kind of health care coverage, including health insurance?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/gethealthcare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="1"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getdoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Would you say that in general your health is: scale 1-5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getgeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="3"
+                android:hint="1 is excellent, 5 is poor"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For how many days during the past 30 days was your mental health not good?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getmental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="5"
+                android:hint="scale 1-30 days"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For how many days during the past 30 days was your physical health not good?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getphysical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="30"
+                android:hint="scale 1-30 days"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have serious difficulty walking or climbing stairs?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getdifficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0"
+                android:hint="0 = no, 1 = yes"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education level (1 = only kindergarten, 2 = elementary, 3 = some high school, 4 = high school graduate, 5 = some college, 6 = college graduate)"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/geteducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="6"
+                android:hint="scale 1-6"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Income scale 1-8"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/getincome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="8"
+                android:hint="1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more"
+                android:inputType="number"
+                android:textColor="#009688"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/display_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
